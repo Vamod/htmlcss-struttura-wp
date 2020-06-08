@@ -58,6 +58,20 @@ main .container {
     height: 100%;
 }
 
+aside section {
+    height: 350px;
+    width: 100%;
+}
+
+aside section:first-child {
+    padding-bottom: 20px;
+}
+
+section .container {
+    background-color: violet;
+    height: 100%;
+    width: 100%;
+}
 
 
 footer {
