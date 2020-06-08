@@ -4,15 +4,68 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .mega-container {
     width: 90vw;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+header {
+    height: 200px;
+    padding:10px;
+}
+
+header .container {
+    background-color: yellow;
+    height: 100%;
+    position: relative;
+}
+
+.container nav {
+    height: 50px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
 }
 
 aside {
     width: 25%;
+    height: 500px;
+    float: left;
+    padding: 10px;
+}
+
+aside .container {
+    background-color: violet;
+    height: 100%;
 }
 
 main {
     width: 50%;
+    height: 800px;
+    float: left;
+    padding: 10px;
+}
+
+main .container {
+    background-color: purple;
+    height: 100%;
+}
+
+
+
+footer {
+    height: 200px;
+    padding: 10px;
+}
+
+footer .container {
+    background-color: lightblue;
+    height: 100%;
 }
