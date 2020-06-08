@@ -48,7 +48,7 @@ aside .container {
 
 main {
     width: 50%;
-    height: 800px;
+    height: 1200px;
     float: left;
     padding: 10px;
 }
@@ -63,9 +63,31 @@ aside section {
     width: 100%;
 }
 
-aside section:first-child {
+aside section.left:first-child {
+    height: 500px;
     padding-bottom: 20px;
 }
+
+aside section.left:nth-child(2) {
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+aside section.left:nth-child(3) {
+    height: 300px;
+}
+
+
+
+aside section.right:first-child {
+    padding-bottom: 20px;
+    height: 100px;
+}
+
+aside section.right:nth-child(2) {
+    height:200px;
+}
+
 
 section .container {
     background-color: violet;
